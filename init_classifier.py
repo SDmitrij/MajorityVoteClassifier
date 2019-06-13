@@ -79,5 +79,5 @@ for idx, clf, tt in zip(product([0, 1], [0, 1]), all_clf, clf_labels):
     axarr[idx[0], idx[1]].scatter(X_train_std[y_train==1, 0], X_train_std[y_train==1, 1], c='green', marker='o', s=50)
     axarr[idx[0], idx[1]].set_title(tt)
 plt.text(-3.5, -4.5, s='Ширина чашелистика [стандартизированная]', ha='center', va='center', fontsize=12)
-plt.text(-10.5, 4.5, s='Длина лепестка [стандартизированная]', ha='center', va='center', fontsize=12, rotation=90)
+plt.text(-12.5, 4.5, s='Длина лепестка [стандартизированная]', ha='center', va='center', fontsize=12, rotation=90)
 plt.show()
